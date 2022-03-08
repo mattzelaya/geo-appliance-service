@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geo Appliance Service</title>
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="container">
+        <a class="logo" href="#">Geo <span>Appliance</span></a>
+
+        <img id="mobile-cta" class="mobile-menu" src="/images/menu.svg" alt="Open Navigation">
+
+        <nav>
+          <img id="mobile-exit" class="mobile-menu-exit" src="/images/exit.svg" alt="CLose Navigation">
+          <ul class="primary-nav">
+            <li class="current"><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+          </ul>
+
+          <ul class="secondary-nav">
+            <li><a href="#"></a></li>
+            <li class="go-premium-cta"><a href="#">Contact</a></li>
+         
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <section class="hero">
+      <div class="container">
+        <div class="left-col">
+          <p class="subhead">Quick &amp; Reliable Kitchen Appliance Repiar/Installations</p>
+          <h1>Welcome to GEO Appliance Service</h1>
+          <div class="hero-cta">
+            <a href="#" class="primary-cta">Learn More Here</a>
+            <a href="#" class="watch-video-cta">
+              <img src="/images/watch.svg" alt="Watch a Video">Watch a Video
+            </a>
+          </div>
+        </div>
+
+        <img src="/images/geoappliancelogo.gif" class="hero-img" alt="Illustration">
+      </div>
+    </section>
+    
+    <section class="features-section">
+      <div class="container">
+        <ul class="features-list">
+          <li>Work with a professional. Certified trained technician</li>
+          <li>15+ years in the field</li>
+          <li>Always gives a complete estimate with no surprises</li>
+          <li>Licensed, bonded, and insured.</li>
+          <li>Family owned and operated local business</li>
+          <li>Other Awesome Features</li>
+        </ul>
+       
+        <img src="/images/geokitchen.jpeg" alt="Kitchen appliances">
+      </div>
+    </section> 
+
+    <section class="testimonials-section">
+      <div class="container">
+        <ul>
+          <li>
+            <img src="/images/yelp.1.jpeg" alt="Person">
+            <blockquote>George Rodriquez arrived on time and quickly found the problem with our refrigerator. It required a part to be ordered . The part arrived and  was installed within the time frame George gave us. Our fridge is back up and running. we are thrilled to have found George. a true professional. thank you George</blockquote>
+            <cite>Dianne. P</cite>
+          </li>
+          <li>
+            <img src="/images/yelp.2.jpeg" alt="Person">
+            <blockquote>George came over at our scheduled appointment time and was super friendly, gave great advice and fixed our dryer within no time at all. He was very clean and cleaned up after himself. Super polite and walked us through what he was doing and why. Great results in a timely fashion. Thanks George!!</blockquote>
+            <cite>Michael. B</cite>
+          </li>
+          <li>
+            <img src="/images/yelp.3.jpeg" alt="Person">
+            <blockquote>I highly recommend George. We had the worst luck with our refrigerator so we called Geo Appliance Service to come check it out. George arrived on time, he was very professional and he made it a point to thoroughly look for whatever was causing the problem. Should we have any more appliance issues, we will definitely be calling him.</blockquote>
+            <cite>Melissa. D</cite>
+          </li>
+        </ul>
+      </div>
+
+    </section>
+
+    <section class="contact-section">
+      <div class="container">
+        <div class="contact-left">
+          <h2>Contact</h2>
+
+          <form action="">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name">
+            
+            <label for="message">Message</label>
+            <textarea name="message" id="message" cols="30" rows="10"></textarea>
+
+            <input type="submit" class="send-message" value="Send message">
+          </form>
+        </div>
+        <div class="contact-right">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d101729.0583322116!2d-121.90784536536337!3d37.17568498870579!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808e30402f53d4ed%3A0xa8a3ea5a3bf88dae!2sSan%20Jose%2C%20CA%2095120!5e0!3m2!1sen!2sus!4v1646773456568!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      const mobileBtn = document.getElementById('mobile-cta')
+        nav = document.querySelector('nav');
+        mobileBtnExit = document.getElementById('mobile-exit')
+      mobileBtn.addEventListener('click', () => {
+        nav.classList.add('menu-btn');
+      })
+      mobileBtnExit.addEventListener('click', () => {
+        nav.classList.remove('menu-btn');
+      })
+
+
+    </script>
+
+  </body>
+</html>
